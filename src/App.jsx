@@ -10,7 +10,8 @@ export default function App() {
         <h2>{buildType}</h2>
 
         <p className="intro">
-          This tiny React/Vite app helps students understand how Docker builds an image and runs a container.
+          This tiny React/Vite app helps students understand how Docker builds
+          an image and runs a container with single and multi stage build.
         </p>
 
         <div className="flow">
@@ -24,16 +25,23 @@ export default function App() {
         <div className="grid">
           <article>
             <h3>Single-stage</h3>
-            <p>Build and run inside the same Node.js image. Easy to understand, but heavier for production.</p>
+            <p>
+              Build and run inside the same Node.js image. Easy to understand,
+              but heavier for production.
+            </p>
           </article>
           <article>
             <h3>Multi-stage</h3>
-            <p>Build with Node.js, then serve only the final static files from a clean NGINX image.</p>
+            <p>
+              Build with Node.js, then serve only the final static files from a
+              clean NGINX image.
+            </p>
           </article>
         </div>
 
         <footer>
-          Teach point: Node.js is needed to build React, but NGINX is enough to serve the final files.
+          Teach point: Node.js is needed to build React, but NGINX is enough to
+          serve the final files.
         </footer>
       </section>
     </main>
